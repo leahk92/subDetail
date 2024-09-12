@@ -1,0 +1,399 @@
+@charset "UTF-8";
+@import url("./reset.css");
+
+
+/* 레이아웃 */
+#wrap {
+    width: 100%;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+#h_container {width: 1380px; margin: 0 auto;}
+
+#header {width: 100%;}
+#header .inr {display: flex;
+ height: 100px; width: 100%;
+}
+#header h1{
+    padding: 11px;
+    width: 12%;
+    }
+#header h1 a {display: block;}
+#header h1 a img {
+    width: 120px;}
+
+#header nav {width: 70%;
+    padding: 0 6% 0 12%;   }
+#header .gnb {    line-height: 100px;
+    float: left;
+ }
+   
+ #header .gnb li {float: left;
+    display: block;
+    padding:0 25px;
+ }
+#header .gnb > li > a {
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Lato'; font-weight: 700;
+}
+
+#header .icon {
+    width: 18%;
+}
+.icon ul {width: 100%;
+    text-align: center;
+    float:left;
+  
+}
+.icon ul li {width: 50%;
+    display: block;
+border-left: 1px #ddd solid;
+padding: 27px;
+float: left;}
+.icon ul li:last-child {
+    border-right: 1px #ddd solid;
+}
+.icon ul li a {}
+
+.icon .caption {
+     font-family: 'Lato';
+     font-size: 15px; color: rgb(149, 149, 149);
+    font-weight: 600;
+    }
+/* 상단메뉴 */
+#top {
+    margin-top: 60px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#top .main_menu {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+#top .sub_menu {
+    float: left;
+    margin: 10px;
+}
+
+#top .sub_menu li {
+    float: left;
+    padding-right: 55px;
+}
+.sub_menu a:hover {  
+    border-bottom: 7px solid #6d6d6d;
+    font-weight: 600;
+}
+#top .sub_menu a {
+    font-size: 20px;
+    color: #6d6d6d;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    padding-bottom: 10px
+}
+
+#top .sub_menu .on a {
+    color: #000;
+    border-bottom: 7px solid #000;
+    font-weight: 600;
+}
+
+
+/* 보드판 */
+.photo {
+    background: url('../image/bg_icon_link.jpg') center 50% no-repeat;
+    padding: 70px 0;
+    background-size: cover;
+}
+
+#navi {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.n_board {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.n_board li {
+    
+}
+.n_board li a {
+    background: rgba(0,0,0,.3);
+    padding: 80px 100px;
+border-radius: 50%;
+display: block;
+}
+.n_board li:last-child {
+    margin-right: 0;
+}
+
+.n_board li a span {
+    display: block;
+    color: #fff;
+    font-size: 27px;
+    text-align: center;
+}
+.n_board li a span:after  {
+    content: "";
+    display: block;
+    width: 59px;
+    height: 60px;
+    margin:28px auto 0;
+
+}
+.n_board li a[data-academy="01"] span:after  {
+    background: url(../image/school/img_academy01.png) no-repeat 0 7px;
+}
+.n_board li a[data-academy="02"] span:after {
+    background: url(../image/school/img_academy02.png) no-repeat 0 7px;
+}
+.n_board li a[data-academy="03"] span:after  {
+    background: url(../image/school/img_academy03.png) no-repeat 0 7px;
+}
+
+
+.n_board li a:hover {
+}
+.n_board li a:hover:before {transform: scale(1.2);}
+.n_board li a:hover:after {content: none;}
+.n_board li a:hover > span:after {
+    transition: transform 0.65s ease-in-out; transform: rotateY(360deg)}
+
+/* 프로그램 */
+#program {
+    width: 100%;
+    margin-top: 200px;
+}
+
+#program .p_list {
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+}
+.p_list li {width: 40%;
+    margin-left: 10%;
+}
+.p_list li p {
+    font-family: 'Noto Sans KR';
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    border-top: 1px solid #b4b4b4;
+    display: block;
+    padding: 15px;
+    width: 80%;}
+.p_list li a {}
+.p_list li a:hover p{    
+    font-weight: 500; color: #c3300d;
+}
+
+.p_list li span {
+    font-size: 37px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: block;
+    
+
+}
+.p_list li strong{
+    font-family: 'Noto Sans KR';
+    font-size: 20px;
+    font-weight: 300;
+    color: #9e9e9e;    padding-left: 3%;
+    display: inline-block;
+
+}
+.p_list li em {
+    display: inline-block;
+    font-family: 'Noto Sans KR';
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: #9D2527;
+    border: #9D2527 2px solid;
+    padding: 3px 10px;
+    margin-left: 33%;
+}
+
+.one em {
+    color: #9D2527;
+    background: none;
+}
+
+/* 구분 사진 */
+.g_pic {
+    background: url(../image/photo.jpg) center bottom no-repeat fixed;
+    height: 300px;
+    background-size: cover;
+}
+
+/* 가이드 */
+#guide {
+width: 100%;
+    margin: 150px 0;
+}
+#guide .note {width: 100%;
+display: flex;
+padding: 0 2%;}
+.notice {
+    width: 40%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.N {
+    margin-right: 16%;
+}
+
+.notice p {
+    font-size: 27px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+    padding: 15px 0;
+    margin-bottom: 14px;
+    color: #000;
+
+}
+
+.notice .more {
+    display: block;
+    margin-top: 15px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.notice .more img {
+    width: 100%;
+}
+
+.notice li {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.g_list {
+    display: block;
+
+}
+
+.N li a span {
+    vertical-align: middle;
+
+}
+
+.N .tit {
+    font-family: 'Noto Sans KR';
+}
+
+.N .date {
+    padding-top: 4px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 0.96em;
+    float: right;
+}
+
+
+/* 하단 */
+#footer {
+    width: 100%;
+    background: #00203d;
+    font-family: 'Noto Sans KR';
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#footer .footer {width: 100%;
+    color: #fff;
+}
+
+.footer .begin {width: 100%;
+    padding:5% 2% 3% 1%;
+display: flex;}
+
+.footer .begin .sns {width: 50%;
+}
+.footer .begin .sns ul {float:left}
+
+.footer .begin .sns h5 {
+    font-size: 19px;
+}
+
+.footer .begin .sns li {
+    float: left;
+    padding-right: 40px;
+}
+
+.footer .begin .sns img {
+    width: 30px;
+    float: left;
+}
+
+.footer .begin .info {width: 50%;
+}
+.footer .begin .info ul {
+    float: right;
+}
+.footer .begin .info li {
+    float: left;
+    padding-left: 40px;
+}
+
+.footer .middle {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 4% 1%;
+}
+
+.footer .middle h5 {
+    font-size: 18px;
+}
+.footer .middle .address
+{        padding-top: 1%;
+}
+.footer .middle p {
+    line-height: 1.6em;
+}
+
+#footer .footer_ {
+    width: 100%;
+    background: #01182e;
+}
+
+.footer_ .end {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer_ .copyright {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+
+
+

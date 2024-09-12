@@ -1,0 +1,531 @@
+@charset "UTF-8";
+@import url("./reset.css");
+
+
+/* 리셋 */
+* {
+    list-style: none;
+}
+
+
+/* 레이아웃 */
+#wrap {width: 100%;}
+#container {width: 1280px; margin: 0 auto;
+}
+
+
+/* 헤더 */
+#h_container {width: 1380px; margin: 0 auto;}
+
+#header {width: 100%;}
+#header .inr {display: flex;
+ height: 100px; width: 100%;
+}
+#header h1{
+    padding: 11px;
+    width: 12%;
+    }
+#header h1 a {display: block;}
+#header h1 a img {
+    width: 120px;}
+
+#header nav {width: 70%;
+    padding: 0 6% 0 12%;   }
+#header .gnb {    line-height: 100px;
+    float: left;
+ }
+   
+ #header .gnb li {float: left;
+    display: block;
+    padding:0 25px;
+ }
+#header .gnb > li > a {
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Lato'; font-weight: 700;
+}
+
+#header .icon {
+    width: 18%;
+}
+.icon ul {width: 100%;
+    text-align: center;
+    float:left;
+  
+}
+.icon ul li {width: 50%;
+    display: block;
+border-left: 1px #ddd solid;
+padding: 27px;
+float: left;}
+.icon ul li:last-child {
+    border-right: 1px #ddd solid;
+}
+.icon ul li a {}
+
+.icon .caption {
+     font-family: 'Lato';
+     font-size: 15px; color: rgb(149, 149, 149);
+    font-weight: 600;
+    }
+/* 상단메뉴 */
+#top { width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background: #000; color: #fff;
+}
+
+#top .main_menu {font-family: 'Montserrat';
+    font-weight: 800; font-size: 50px;
+    padding-bottom: 10px; 
+    }
+#top .sub_menu {float: left;
+    margin: 10px;
+    }
+#top .sub_menu li {float: left;
+padding-right: 55px;}
+#top .sub_menu a {font-size: 20px;
+    color: #6d6d6d; 
+    font-weight: 500;
+    font-family: 'Montserrat';
+    padding-bottom: 10px}
+#top .sub_menu .on a {color: #fff;
+    border-bottom: 7px solid #fff;
+font-weight: 600;}
+
+
+/* 추가 */
+#overview { 
+    background: #000; color: #fff;
+
+    
+}
+.pic {
+    background: url(../image/gall06_original.jpg) no-repeat;
+    background-size: 80%;
+    height: 700px;
+    background-position-x: -18%;
+    position: relative;
+}
+/* 추가-텍스트 */
+.pic .txt {display: block;
+    position: absolute;
+    right: 3%;
+    top: 29%;
+color: #Fff;}
+  
+.pic em{ display: inline-block;
+    padding-right: 145px; 
+    padding-bottom: 5px;
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #fff;
+    font-size: 25px; font-weight: 600; 
+    font-family: 'Montserrat';}
+.pic h3 {     margin-bottom: 22px;
+    font-size: 70px;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    padding: 20px 30px;}
+
+.pic span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat';
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+    padding: 10px 60px;
+}
+#overview .txt .date{background: rgba(255,255,255,.2);
+    font-weight: 300;
+}
+/* 티켓 버튼 */
+.ticket {text-align: center;
+    position: absolute;
+    top: 91%;
+    left: 43%;
+    border: 10px solid #fff;    
+    border-radius: 10%;
+    }
+
+.ticket a {    display: block;
+    font-weight: 800; color: #fff;
+    font-size: 28px;
+    font-family: 'Montserrat';    letter-spacing: 0.05em;
+    padding: 65px 30px;
+    background-color: rgb(157, 37, 39);
+    border-radius: 5%;
+}
+
+.ticket a:hover {
+color: #fff;
+}
+
+
+/* 공연정보 1 */
+#info_01 {
+    width: 100%;
+     margin-top: 80px;
+     position: relative;
+ }
+
+.ticket img {
+    display: block;
+    padding: 10px 0 0 40px;
+}
+/* 설명*/
+#info_01 .cont {
+display: flex;
+width: 100%;
+text-align: center;
+}
+.cont h4 {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 500; 
+    display: inline-block;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    color: #000;
+
+}
+.cont h4:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0px;
+    height: 4px;
+    background: #9D2527;
+}
+
+/* :어바웃 */
+#info_01 .left {width: 50%;
+}
+.left p {
+    font-family: 'Noto Sans KR';font-weight: 300;
+
+}
+.left .m_word {
+font-size: 27px; letter-spacing: 0em;
+text-align: center;
+}
+.left .s_word {    margin-top: 25px;
+color: #5d5d5d;
+    font-size: 18px;
+    line-height: 1.7em;
+    padding-left: 100px;
+}
+/* :상세 */
+#info_01 .edit {width: 50%;
+   }
+
+#info_01 .edit dl {display: table-row;}
+
+#info_01 .edit dl dt,
+#info_01 .edit dl dd {
+    border-bottom: 1px solid #dedede;
+    display: table-cell;
+    padding: 1rem;
+    letter-spacing: 0.02em;
+}
+
+#info_01 .edit dl dt {
+    font-size: 17px; 
+    font-family: 'Montserrat'; font-weight: 600;
+    padding-right: 35px; padding-left: 8px
+}
+#info_01 .edit dl dd {
+    font-size: 18px; font-family: 'Noto Sans KR'; font-weight: 300;
+} 
+
+/* 문자 */
+.back_tit {    font-family: 'Montserrat';
+    font-weight: 400; font-size: 40px;
+    letter-spacing: 0.9em;
+    color: rgb(240, 240, 240);
+    position: absolute;
+    top: 120px;
+    left: 0;
+    line-height: 1.6em;
+    z-index: -999;
+}
+
+/* 갤러리 */
+#gall {float: left; width: 100%; box-sizing: border-box;
+ margin: 50px 0;}
+
+#gall .s_box a {
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+}
+#gall .s_box a:first-child {
+    margin-left: 0.5%;
+}
+#gall .s_box a:last-child {
+    margin-right: 0.5%;
+}
+#gall .s_box img {display: block;
+    width: 100%;}
+#gall .s_box a:hover img {filter:contrast(50%)}
+
+#gall .next i {font-size: 30px; color: #01182e;}
+
+
+
+/* 메뉴 탭 */
+#aside {float: left; width: 15%; 
+  }
+
+#aside .tab {float: left;
+    margin-top: 100px; }
+#aside .tab ul { }
+#aside .tab ul li {width: 100%;
+    text-align: center; 
+ }
+#aside .tab ul li a {
+    padding: 10px 20px;
+    display: block;
+    line-height: 45px;
+    font-family: 'Noto Sans KR'; font-weight: 300;
+    font-size: 17px;
+}
+
+#aside .tab ul .on {
+    background: #00203d;
+    box-sizing: border-box;
+    font-weight: bold;}
+#aside .tab ul .on a {color: #fff;}
+
+#aside .tab ul li:hover {background: #00203d;
+    box-sizing: border-box;}
+#aside .tab ul li:hover a {color: #fff;}
+    
+
+/* 공연정보 2 */
+#section {float: left; width: 85%;}
+#info_02 {
+    float: left; width: 100%;
+        margin-top: 120px;
+    }
+#info_02 .tit {padding-left: 50px; width: 100%;
+    font-family: 'Montserrat'; letter-spacing: 0em;
+    font-size: 85px; font-weight: 500;
+    color:#000;
+    margin-bottom: 50px;
+
+}
+
+/* ->시놉시스 */
+#synopsis {float: left;
+    }
+
+#synopsis .desc {float: left;
+    padding-left: 100px; 
+    font-family: 'Noto Sans KR'; font-weight: 300;
+    color: #5d5d5d;
+    font-size: 17px; line-height: 30px;
+}
+
+
+
+/* 캐스트 */
+#cast {float: left; margin-top: 200px;}
+#cast .cast {float: left; margin-left: 100px;}
+
+#cast .cast ul {overflow: hidden;
+    margin-bottom: 30px; }
+#cast .cast ul li {float: left;
+    margin-right: 25px;}
+#cast .cast ul li a  {display: block;}
+
+#cast .cast figure {position: relative;}
+#cast .cast figcaption  {
+    position: absolute;
+    bottom: 4px; left: 0; right: 0;
+    min-height: 0;
+
+    background: rgba(0,0,0,.5);
+    padding: 10px 0;
+    text-align: center;
+
+    -webkit-transition:min-height .2s ease-in-out;
+    -o-transition:min-height .2s ease-in-out;
+    transition:min-height .2s ease-in-out;
+
+    display:-webkit-box;
+    display:-ms-flexbox;
+    
+    display:flex;-webkit-box-pack:center;-ms-flex-pack:center;
+    justify-content:center;-webkit-box-align:center;-ms-flex-align:center;
+    align-items:center;-webkit-box-orient:vertical;
+    -webkit-box-direction:normal;-ms-flex-direction:column;
+    flex-direction:column;
+}
+#cast .cast figcaption strong {
+    color: #fff; 
+    font-family: 'Montserrat'; font-size: 16px;
+    font-weight: 300;
+}
+#cast .cast figure:hover figcaption { min-height:246px; font-weight: 700px;}
+#cast .cast figure:hover figcaption strong {font-weight: 700;}
+
+
+
+#cast .next {float: left;}
+#cast .next a {position: relative;}
+#cast .next i {position: absolute;
+    top: 257px; right: -25px;
+    color: #01182e; font-size: 50px;}
+
+
+/* ->크리에이티브 팀 */
+#team {float: left;  width: 100%;
+    margin-top: 200px; margin-bottom: 210px;}
+
+#team .row {margin-left: 100px;
+    width: 100%;
+}
+#team .row li {
+    width: 100%;
+    padding-bottom: 22px;
+}
+
+#team .row strong {
+    font-family: 'Arimo'; font-weight: 600; font-size: 24px;
+    color: #5d5d5d;
+    width: 40%; display: inline-block;
+}
+#team .row span {text-align: left;
+    font-family: 'Montserrat';  font-weight: 400;
+    font-size: 24px;
+}
+#team .row li:hover {cursor: pointer;}
+#team .row li:hover strong {color: #9d2527; text-decoration: underline;}
+#team .row li:hover span {  font-weight: 600;}
+
+
+/* 고정 Follow 메뉴 */
+.follow {
+width: 100%; overflow: auto;
+position: sticky; bottom: 0;
+box-shadow: 0px -12px 17px -22px rgba(255, 255, 255, 1);
+}
+.follow-menu ul li {float: left; 
+    width: 33.33%; text-align: center;}
+.follow-menu { 
+    height: 65px; width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .85);
+    box-sizing: border-box;
+}
+
+.follow-menu .inner {
+        width: 1200px; margin: 0 auto;
+        padding: 24px 0; color: #00203d;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1em;
+    text-align: center;
+    box-sizing: border-box; 
+}
+.follow-menu .inner span {
+    color: #fff;     font-family: 'Noto Sans KR';
+    font-weight: 200;font-size: 19px;
+    letter-spacing: 0em;
+
+}
+.follow-menu .inner i {font-size: 22px; margin-left: 20px;
+    color: #fff;
+}
+.follow-menu .inner li a:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px #fff solid;}
+
+
+
+
+/* 하단 */
+#footer {
+    width: 100%;
+    background: #00203d;
+    font-family: 'Noto Sans KR';
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#footer .footer {width: 100%;
+    color: #fff;
+}
+
+.footer .begin {width: 100%;
+    padding:5% 2% 3% 1%;
+display: flex;}
+
+.footer .begin .sns {width: 50%;
+}
+.footer .begin .sns ul {float:left}
+
+.footer .begin .sns h5 {
+    font-size: 19px;
+}
+
+.footer .begin .sns li {
+    float: left;
+    padding-right: 40px;
+}
+
+.footer .begin .sns img {
+    width: 30px;
+    float: left;
+}
+
+.footer .begin .info {width: 50%;
+}
+.footer .begin .info ul {
+    float: right;
+}
+.footer .begin .info li {
+    float: left;
+    padding-left: 40px;
+}
+
+.footer .middle {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 4% 1%;
+}
+
+.footer .middle h5 {
+    font-size: 18px;
+}
+.footer .middle .address
+{        padding-top: 1%;
+}
+.footer .middle p {
+    line-height: 1.6em;
+}
+
+#footer .footer2 {
+    background: #01182e;
+}
+
+.footer2 .end {
+    padding: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer2 .copyright {
+    width: 1200px;
+    color: #fff;
+    font-size: 13px;
+}
+

@@ -1,0 +1,193 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #fff;
+	position: fixed;
+}
+.cbp-spmenu .x_ico
+{	background: rgb(233, 233, 233);
+}
+.cbp-spmenu .x_ico a {
+    display: block;
+    text-align: right;
+    padding: 0.4em;}
+.cbp-spmenu .x_ico img {
+	width: 23px;
+}
+.cbp-spmenu .tit_naviTab {    text-align: center;
+	/* display: block; */
+	margin: 1em;
+}
+
+
+
+.cbp-spmenu .tit_naviTab a {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.cbp-spmenu .tit_naviTab .user_ {
+	width: 20%;
+
+}
+
+.cbp-spmenu .tit_naviTab .user_ img {
+	width: 35px;
+
+}
+
+.cbp-spmenu .tit_naviTab .logo_ {
+	width: 50%;
+}
+
+.cbp-spmenu .tit_naviTab .logo_ img {
+	width: 110px;
+}
+
+.cbp-spmenu .tit_naviTab .search_ {
+	width: 20%;
+
+}
+
+.cbp-spmenu .tit_naviTab .search_ img {
+	width: 35px;
+}
+
+.cbp-spmenu .menu_naviTab {
+	font-family: 'Lato';
+	display: block;
+	color: #000;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.cbp-spmenu a:hover {
+	/* background: #258ecd; */
+}
+
+.cbp-spmenu a:active {
+	/* background: #afdefa; */
+	color: #000;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical .menu_naviTab {
+	border-bottom: 1px solid  rgb(233, 233, 233);
+	padding: 1em;
+}
+
+
+
+
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+	width: 55%;
+	box-shadow: 1px 0px 5px 9px #fff;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em) {
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em) {
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}

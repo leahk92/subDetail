@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url("./reset.css");
+
+
+/* 레이아웃 */
+#wrap {
+    width: 100%;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+#h_container {width: 1380px; margin: 0 auto;}
+
+#header {width: 100%;}
+#header .inr {display: flex;
+ height: 100px; width: 100%;
+}
+#header h1{
+    padding: 11px;
+    width: 12%;
+    }
+#header h1 a {display: block;}
+#header h1 a img {
+    width: 120px;}
+
+#header nav {width: 70%;
+    padding: 0 6% 0 12%;   }
+#header .gnb {    line-height: 100px;
+    float: left;
+ }
+   
+ #header .gnb li {float: left;
+    display: block;
+    padding:0 25px;
+ }
+#header .gnb > li > a {
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Lato'; font-weight: 700;
+}
+
+#header .icon {
+    width: 18%;
+}
+.icon ul {width: 100%;
+    text-align: center;
+    float:left;
+  
+}
+.icon ul li {width: 50%;
+    display: block;
+border-left: 1px #ddd solid;
+padding: 27px;
+float: left;}
+.icon ul li:last-child {
+    border-right: 1px #ddd solid;
+}
+.icon ul li a {}
+
+.icon .caption {
+     font-family: 'Lato';
+     font-size: 15px; color: rgb(149, 149, 149);
+    font-weight: 600;
+    }
+/* 상단메뉴 */
+#top { width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#top .main_menu {font-family: 'Montserrat';
+    font-weight: 800; font-size: 50px;
+    padding-bottom: 10px;
+    }
+#top .sub_menu {float: left;
+    margin: 10px;
+    }
+#top .sub_menu li {float: left;
+padding-right: 55px;}
+#top .sub_menu a {font-size: 20px;
+    color: #6d6d6d; 
+    font-weight: 500;
+    font-family: 'Montserrat';
+    padding-bottom: 10px}
+#top .sub_menu .on a {color: #000;
+    border-bottom: 7px solid #000;
+font-weight: 600;}
+
+/* 지도 */
+#venue {width: 100%; 
+}
+.ven {    margin-top: 100px;
+    font-family: 'Noto Sans KR';
+    position: relative;
+
+}
+
+.ven p {        font-size: 30px;
+    font-weight: 300;    letter-spacing: 0.05em;
+    text-align: right;
+    padding-right: 50px;
+}
+.ven .bar:before {
+    content: '';
+    display: inline-block;
+    width: 76%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+.ven .bar strong {
+    font-weight: 400;
+    color:#00203d;
+}
+.ven span{    display: block;
+    padding:9px 55px;    font-size: 23px;
+    font-weight: 300;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+    margin-left: 23%;    letter-spacing: 0.03em;
+}
+.ven .adr {
+     background-image: url('../image/ico_add.png');
+     margin-top: 70px;
+    }
+
+.ven .tel {
+    background-image: url('../image/ico_tel.png');
+    
+}
+.map { 
+    display: block;
+    margin-top: 70px;
+    text-align: right;
+}
+.map img {    display: inline-block;
+    width: 81%;}
+.v_txt{   
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 150px;
+    color: rgb(226, 226, 226);
+    z-index: -999;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    letter-spacing: 0.2em;
+}
+
+/* 안내 */
+#guide {width: 100%;    display: flex;
+    flex-direction: column;
+    margin: 200px 0 100px 0;
+    position: relative;
+    }
+#guide .bg_blue {
+    width: 100%;
+    height: 400px;
+    background: #00203d;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -999;
+
+}
+.ask {
+    margin: 150px 0 70px 0;
+}
+.ask p {color: #fff;
+    font-weight: 300;font-family: 'Noto Sans KR';
+    font-size: 33px;
+    letter-spacing: 0.02em;
+    padding-left: 235px;
+}
+
+
+.f_blue{
+font-weight: 700;
+}
+.trans {
+    font-family: 'Noto Sans KR';
+    padding-top: 50px;
+    background: #fff;
+}
+.trans li {display: block;}
+.trans .bus {width: 50%;
+    background-image: url('../image/bg_b.png');
+    background-repeat: no-repeat;
+    background-position: 376px 86px;
+    text-align: center;
+    margin-bottom: 150px;}
+
+.trans .sub {width: 50%;
+    background-image: url('../image/bg_s.png');
+    background-repeat: no-repeat;
+    background-position: 386px 86px;
+    text-align: center;}
+
+.trans h1 { text-align: center;
+    font-weight: 500;font-family: 'Noto Sans KR';
+    font-size: 26px;
+    display: inline-block;
+    color: #000;
+    border: 3px solid #ddd;
+    padding: 12px 127px;
+}
+.trans .sect {margin-top: 3em;
+    font-size: 20px; font-weight: 300;
+    padding: 0 15px;
+    text-align: left;
+}
+.sect dd {padding-left: 140px;}    
+
+.sub .sect strong {
+    display: block;
+font-size: 20px;font-weight: 600;
+color: #F2430C;
+margin-bottom: 17px;
+}
+.sub .sect p {
+    line-height: 2em;
+}
+
+
+/* 하단 */
+#footer {
+    width: 100%;
+    background: #00203d;
+    font-family: 'Noto Sans KR';
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#footer .footer {width: 100%;
+    color: #fff;
+}
+
+.footer .begin {width: 100%;
+    padding:5% 2% 3% 1%;
+display: flex;}
+
+.footer .begin .sns {width: 50%;
+}
+.footer .begin .sns ul {float:left}
+
+.footer .begin .sns h5 {
+    font-size: 19px;
+}
+
+.footer .begin .sns li {
+    float: left;
+    padding-right: 40px;
+}
+
+.footer .begin .sns img {
+    width: 30px;
+    float: left;
+}
+
+.footer .begin .info {width: 50%;
+}
+.footer .begin .info ul {
+    float: right;
+}
+.footer .begin .info li {
+    float: left;
+    padding-left: 40px;
+}
+
+.footer .middle {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 4% 1%;
+}
+
+.footer .middle h5 {
+    font-size: 18px;
+}
+.footer .middle .address
+{        padding-top: 1%;
+}
+.footer .middle p {
+    line-height: 1.6em;
+}
+
+#footer .footer2 {
+    background: #01182e;
+}
+
+.footer2 .end {
+    padding: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer2 .copyright {
+    width: 1200px;
+    color: #fff;
+    font-size: 13px;
+}
+
